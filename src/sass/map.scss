@@ -1,0 +1,60 @@
+.map {
+  margin-bottom: 56px;
+}
+
+.map__header {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 31px;
+
+  margin: 0;
+  padding: 43px 23px 27px;
+
+  color: $color-dark-blue;
+}
+
+.map__iframe {
+  width: 100%;
+  height: 381px;
+
+  border: 0;
+}
+
+@media (min-width: $tablet-width-min) {
+  .map {
+    max-width: $tablet-width-min;
+
+    margin: 0 auto;
+    padding: 5px 46px 80px 45px;
+  }
+
+  .map__header {
+    font-size: 32px;
+    line-height: 45px;
+
+    padding: 24px 0 33px;
+  }
+
+  .map__iframe {
+    height: 458px;
+  }
+}
+
+@media (min-width: $desktop-width-min) {
+  .map {
+    max-width: 1210px;
+
+    margin: auto;
+    padding: 32px 20px 110px 20px;
+  }
+
+  .map__header {
+    font-size: 41px;
+    line-height: 57px;
+
+    padding-right: 20px;
+    padding-left: 0;
+    padding-bottom: 56px;
+  }
+}

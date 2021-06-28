@@ -1,0 +1,54 @@
+{
+  "name": "league-bank",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "eslint": "eslint --fix --ext .jsx --ext .js src/",
+    "test": "npm run eslint",
+    "start": "webpack serve --open",
+    "build": "webpack --mode production"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "7.13.16",
+    "@babel/preset-env": "7.13.15",
+    "babel-loader": "8.2.2",
+    "babel-preset-expo": "8.3.0",
+    "css-loader": "5.2.4",
+    "eslint-config-htmlacademy": "3.0.0",
+    "eslint-plugin-react": "7.23.2",
+    "file-loader": "6.2.0",
+    "node-sass": "5.0.0",
+    "sass-loader": "11.0.1",
+    "style-loader": "2.0.0",
+    "webpack": "5.35.0",
+    "webpack-cli": "4.6.0",
+    "webpack-dev-server": "3.11.2"
+  },
+  "optionalDependencies": {
+    "fsevents": "2.3.2"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-react-jsx": "7.13.12",
+    "axios": "0.21.1",
+    "moment": "2.29.1",
+    "normalize-scss": "7.0.1",
+    "prop-types": "15.7.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-input-mask": "2.0.4",
+    "react-redux": "7.2.3",
+    "redux": "4.0.5"
+  }
+}

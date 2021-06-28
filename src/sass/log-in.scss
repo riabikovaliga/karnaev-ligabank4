@@ -1,0 +1,269 @@
+.log-in {
+  position: fixed;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  top: 0;
+  left: 0;
+  background-color: rgba(88, 87, 87, 0.6);
+
+  z-index: 99;
+
+  &--opened {
+    display: flex;
+  }
+}
+
+.log-in__form {
+  position: fixed;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: baseline;
+
+  width: 290px;
+  min-height: 455px;
+
+  padding: 45px 16px 71px 16px;
+
+  background-color: $color-white;
+
+  border: 4px solid $color-bright-blue;
+  box-sizing: border-box;
+}
+
+.log-in__logo {
+  width: 151px;
+  height: 31px;
+
+  margin-left: -6px;
+  margin-bottom: 25px;
+
+  background-image: url("../img/logo-log-in.svg");
+  background-repeat: no-repeat;
+}
+
+.log-in__close {
+  position: absolute;
+
+  width: 16px;
+  height: 16px;
+
+  top: 43px;
+  right: 14px;
+
+  background-color: transparent;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border: none;
+  cursor: pointer;
+}
+
+.log-in__label {
+  position: relative;
+
+  font-size: 16px;
+  line-height: 22px;
+
+  margin-top: 1px;
+  margin-bottom: 25px;
+
+  color: #394959;
+
+  &--login {
+    margin-bottom: 18px;
+  }
+
+  &--password {
+    margin-bottom: 30px;
+  }
+}
+
+.log-in__input {
+  font-size: 24px;
+  line-height: 58px;
+
+  width: 250px;
+  height: 60px;
+
+  margin-top: 5px;
+  padding-left: 10px;
+
+  background-color: $color-white;
+  border: 1px solid $color-dark-blue;
+  border-radius: 4px;
+
+  box-sizing: border-box;
+
+  &--password {
+    padding-right: 60px;
+  }
+
+  &--password {
+    padding-right: 50px;
+  }
+}
+
+.log-in__show-password {
+  position: absolute;
+  display: block;
+
+  width: 22px;
+  height: 12px;
+
+  bottom: 176px;
+  right: 31px;
+
+  background-color: $color-white;
+  background-image: url("../img/icon-password.svg");
+  background-repeat: no-repeat;
+
+  border: none;
+  cursor: pointer;
+}
+
+.log-in__submit {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+
+  padding: 16px 107px 14px 104px;
+
+  @include button($color-white, $color-bright-blue);
+}
+
+.log-in__restore-password {
+  position: absolute;
+
+  font-size: 14px;
+  line-height: 20px;
+
+  bottom: 41px;
+  right: 50%;
+  transform: translateX(50%);
+
+  color: $color-grey;
+  text-align: right;
+}
+
+@media (min-width: $tablet-width-min) {
+  .log-in__form {
+    width: 678px;
+    min-height: 493px;
+
+    padding: 55px 84px;
+  }
+
+  .log-in__logo {
+    margin-bottom: 35px;
+    margin-left: -1px;
+  }
+
+  .log-in__close {
+    top: 55px;
+    right: 81px;
+
+    width: 20px;
+    height: 20px;
+  }
+
+  .log-in__label {
+    &--login {
+      margin-bottom: 23px;
+    }
+
+    &--password {
+      margin-bottom: 49px;
+    }
+  }
+
+  .log-in__input {
+    width: 502px;
+    height: 60px;
+
+
+    &--password {
+      padding-right: 50px;
+    }
+
+    &--password {
+      padding-right: 50px;
+    }
+  }
+
+  .log-in__show-password {
+    right: 108px;
+    bottom: 189px;
+  }
+
+  .log-in__submit {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+
+    padding: 20px 227px 19px 225px;
+  }
+
+  .log-in__restore-password {
+    font-size: 12px;
+    line-height: 17px;
+
+    bottom: 141px;
+    right: 130px;
+  }
+}
+
+@media (min-width: $desktop-width-min) {
+  .log-in__form {
+    width: 544px;
+
+    padding: 56px
+  }
+
+  .log-in__logo {
+    margin-top: -1px;
+    margin-bottom: 35px;
+  }
+
+  .log-in__close {
+    top: 53px;
+    right: 54px;
+
+    width: 20px;
+    height: 20px;
+  }
+
+  .log-in__label {
+    &--login {
+      margin-bottom: 23px;
+    }
+
+    &--password {
+      margin-bottom: 49px;
+    }
+  }
+
+  .log-in__input {
+    width: 424px;
+  }
+
+  .log-in__show-password {
+    right: 80px;
+  }
+
+  .log-in__submit {
+    padding: 20px 188px 19px 186px;
+  }
+
+  .log-in__restore-password {
+    right: 103px;
+  }
+}
